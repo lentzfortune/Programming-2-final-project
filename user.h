@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-// This class gets the user's username and password and returns those values
+// This class takes in the user's username and password
 
 class User{
     

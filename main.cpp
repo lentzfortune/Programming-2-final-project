@@ -2,19 +2,17 @@
 #include <fstream>
 #include "registration.h"
 #include "user.h"
+#include <string>
 using namespace std;
 
-void menu(){
-    
-}
-
-
-int calorieCounter(){   
-    ;
-}
 
 int main(){
-    menu();
+    User user;
+    userRegistration login;
+    
+    login.registerUser(user);
+    
+    
     ofstream calorieFile;
     calorieFile.open("caloriecount.txt");
     calorieFile << "Hello. Writing to this file.\n";
@@ -26,6 +24,7 @@ int main(){
     } else{
         cout << "Enter opening file";
     }
+
     
     return 0;
 }

@@ -5,8 +5,19 @@
 #include "user.h"
 
 
-class registerUser{
-    
+class userRegistration{
+    public:
+        void registerUser(User &user){
+            std::string username, password;
+
+            std::cout << "Enter username: ";
+            std::cin >> username;
+            user.setUsername(username);
+
+            std::cout << "Enter password: ";
+            std::cin >> password;
+            user.setPassword(password);
+        }
     
 
 
